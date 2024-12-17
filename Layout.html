@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Layout of keyboard</title>
+		<link rel="shortcut icon" href="snake.jpg"/>
+		<style>
+            @font-face {
+                font-family: 'acboucle';
+                src: url('https://raw.githubusercontent.com/nortonsellinger/Warehouse/main/FONTS/ACBoucle.ttf')
+                format('ttf'):
+            }
+            :root {
+                --unit1: 50px;
+                --gap: 5px;
+            }
+			* {
+				box-sizing: border-box;
+				margin: 0px;
+			}
+			body {
+				background-color: black;
+                font-size: 30px;
+			}
+            #keyboard {
+                /*width:;*/
+                margin: 50px;
+                padding:25px;
+                background: whitesmoke;
+                border-radius: 10px;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                gap: var(--gap);
+                font-family: 'acboucle', Sans-Serif;
+            }
+            .hor_flex {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                gap: var(--gap);
+            }
+			.key {
+                height: var(--unit1);
+                border: 1px solid gray;
+                border-radius: 10px;
+                background: white;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+			}
+            .unit1 {
+                width: var(--unit1);
+            }
+            .unit1_25 {
+                width: calc(1.25 * var(--unit1));
+            }
+            .unit1_5 {
+                width: calc(1.5 * var(--unit1));
+            }
+            .unit1_75 {
+                width: calc(1.75 * var(--unit1));
+            }
+            .unit2 {
+                width: calc(2 * var(--unit1));
+            }
+            .unit2_25 {
+                width: calc(2.25 * var(--unit1));
+            }
+            .unit6_25 {
+                width: calc(6.25 * var(--unit1));
+            }
+		</style>
+	</head>
+	<body>
+		<div id="keyboard">
+		    <div class="hor_flex">
+		        <div class="key unit1">
+		            <div class="legend">~</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">1</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">2</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">3</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">4</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">5</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">6</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">7</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">8</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">9</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">0</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">-</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">+</div>
+		        </div>
+                <div class="key unit2">
+		            <div class="legend">back</div>
+		        </div>
+		    </div>
+		    <div class="hor_flex">
+		        <div class="key unit1_5">
+		            <div class="legend">tab</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">Q</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">W</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">E</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">R</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">T</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">Y</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">U</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">I</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">O</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">P</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">{</div>
+		        </div>
+                <div class="key unit1">
+		            <div class="legend">}</div>
+		        </div>
+                <div class="key unit1_5">
+		            <div class="legend">\|</div>
+		        </div>
+		    </div>
+		</div>
+		<script>
+			
+		</script>
+	</body>
+</html>
